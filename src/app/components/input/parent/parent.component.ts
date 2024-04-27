@@ -9,6 +9,14 @@ import { ChildComponent } from '../child/child.component';
   styleUrl: './parent.component.scss',
 })
 export class ParentComponent {
+  headTitle = 'Doukumentasi Belajar Angular 17';
+
+  input = 'Materi Input: ';
   textTitle = 'Ini adalah Teks Input';
   textDesc = 'Input itu mengirim data dari Parent ke Child';
+
+  output = 'Materi Output: ';
+  getMessage($event: string) {
+    alert($event);
+  }
 }

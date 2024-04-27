@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -10,4 +10,10 @@ import { Component, Input } from '@angular/core';
 export class ChildComponent {
   @Input() textTitle = '';
   @Input() textDesc = '';
+
+  @Output() btnOuput = new EventEmitter<string>();
+
+  sendMessage() {
+    this.btnOuput.emit('Ouput Mengirim data dari Child ke Parent');
+  }
 }

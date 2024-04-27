@@ -1,2 +1,12 @@
-<h1>{{ textTitle }}</h1>
-<p>{{ textDesc }}</p>
+<div class="container">
+  <h1 class="text-center justify-content-center mt-4 mb-4">{{ headTitle }}</h1>
+
+  <hr />
+  <h3>{{ input }}</h3>
+  <h1>{{ textTitle }}</h1>
+  <p>{{ textDesc }}</p>
+
+  <hr />
+  <h3>{{ output }}</h3>
+  <app-child (btnOuput)="getMessage($event)"></app-child>
+</div>
