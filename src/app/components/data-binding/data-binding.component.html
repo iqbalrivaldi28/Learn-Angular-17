@@ -1,0 +1,23 @@
+<div class="container">
+  <!-- Data Binding -->
+  <h3>{{ dataBinding }}</h3>
+
+  <!-- Data Binding One Way dari Data Souce (TS) ke View (HTML) -->
+  <img [src]="imgsrc" alt="property-binding" *ngIf="isShowImage" />
+
+  <br />
+
+  <!-- Data Binding One Way dari View (HTML) ke Data Source (TS) -->
+  <button (click)="hideImage()" class="me-3 mt-3 btn btn-danger">
+    {{ btnHide }}
+  </button>
+  <button (click)="showImage()" class="mt-3 btn btn-success">
+    {{ btnSHow }}
+  </button>
+
+  <br />
+
+  <!-- Data Biding Two Way -->
+  <input type="text" [(ngModel)]="textTwoWay" class="mt-5" />
+  <p>{{ textTwoWay }}</p>
+</div>
