@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { ParentComponent } from './components/input_output/parent/parent.component';
 import { DataBindingComponent } from './components/data-binding/data-binding.component';
 import { PropertyBindingComponent } from './components/property-binding/property-binding.component';
+import { EventBindingComponent } from './components/event-binding/event-binding.component';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,7 @@ import { PropertyBindingComponent } from './components/property-binding/property
     ParentComponent,
     DataBindingComponent,
     PropertyBindingComponent,
+    EventBindingComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
