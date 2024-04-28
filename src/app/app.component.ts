@@ -5,6 +5,7 @@ import { DataBindingComponent } from './components/data-binding/data-binding.com
 import { PropertyBindingComponent } from './components/property-binding/property-binding.component';
 import { EventBindingComponent } from './components/event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { DirectivesComponent } from './components/directives/directives.component';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,7 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
     PropertyBindingComponent,
     EventBindingComponent,
     TwoWayBindingComponent,
+    DirectivesComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
