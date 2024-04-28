@@ -21,7 +21,7 @@ import { DirectiveNgstyleComponent } from './components/directive-ngstyle/direct
     TwoWayBindingComponent,
     DirectivesComponent,
     DirectiveNgclassComponent,
-    // DirectiveNgstyleComponent,
+    DirectiveNgstyleComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
