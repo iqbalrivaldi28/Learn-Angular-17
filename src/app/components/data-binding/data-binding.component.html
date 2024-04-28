@@ -2,12 +2,12 @@
   <!-- Data Binding -->
   <h3>{{ dataBinding }}</h3>
 
-  <!-- Data Binding One Way dari Data Souce (TS) ke View (HTML) -->
+  <!-- Data Binding One Way dari Data Souce (TS) ke View (HTML) (Property BInding) -->
   <img [src]="imgsrc" alt="property-binding" *ngIf="isShowImage" />
 
   <br />
 
-  <!-- Data Binding One Way dari View (HTML) ke Data Source (TS) -->
+  <!-- Data Binding One Way dari View (HTML) ke Data Source (TS) (Event Binding) -->
   <button (click)="hideImage()" class="me-3 mt-3 btn btn-danger">
     {{ btnHide }}
   </button>
