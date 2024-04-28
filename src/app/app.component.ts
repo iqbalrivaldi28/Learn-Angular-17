@@ -8,6 +8,7 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
 import { DirectivesComponent } from './components/directives/directives.component';
 import { DirectiveNgclassComponent } from './components/directive-ngclass/directive-ngclass.component';
 import { DirectiveNgstyleComponent } from './components/directive-ngstyle/directive-ngstyle.component';
+import { DirectiveStructuralComponent } from './components/directive-structural/directive-structural.component';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +23,8 @@ import { DirectiveNgstyleComponent } from './components/directive-ngstyle/direct
     DirectivesComponent,
     DirectiveNgclassComponent,
     DirectiveNgstyleComponent,
+    DirectiveStructuralComponent,
+    DirectiveStructuralComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

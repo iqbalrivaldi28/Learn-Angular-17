@@ -3,8 +3,8 @@
   <h3>{{ title }}</h3>
 
   <br />
-  <div class="row">
-    <div *ngFor="let product of products" class="col-md-4">
+  <!-- <div class="row">
+    <div  *ngFor="let product of products" class="col-md-4">
       <div
         class="card"
         style="width: 18rem"
@@ -22,5 +22,28 @@
         </div>
       </div>
     </div>
+  </div> -->
+
+  <div class="row">
+    @for (product of products; track product.id) {
+    <div class="col-md-4">
+      <div
+        class="card"
+        style="width: 18rem"
+        [ngStyle]="{ backgroundColor: product.stock > 0 ? 'white' : 'gray' }"
+      >
+        <img src="{{ product.imgUrl }}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title fw-bold">{{ product.name }}</h5>
+          <h5 class="card-text text-italic">Harga: {{ product.price }}</h5>
+          <h6 class="card-text">Stock: {{ product.stock }}</h6>
+
+          <button [disabled]="product.stock === 0" class="btn btn-primary">
+            Beli Product
+          </button>
+        </div>
+      </div>
+    </div>
+    }
   </div>
 </div>
