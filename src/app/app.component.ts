@@ -4,6 +4,7 @@ import { ParentComponent } from './components/input_output/parent/parent.compone
 import { DataBindingComponent } from './components/data-binding/data-binding.component';
 import { PropertyBindingComponent } from './components/property-binding/property-binding.component';
 import { EventBindingComponent } from './components/event-binding/event-binding.component';
+import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { EventBindingComponent } from './components/event-binding/event-binding.
     DataBindingComponent,
     PropertyBindingComponent,
     EventBindingComponent,
+    TwoWayBindingComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -21,4 +23,6 @@ import { EventBindingComponent } from './components/event-binding/event-binding.
 export class AppComponent {
   dataPropertyBinding =
     'Ini data dari Parent Component (App Componet) ke Property Binding Component sebagai Child';
+
+  counter = 0;
 }

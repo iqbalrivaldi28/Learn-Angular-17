@@ -1,0 +1,24 @@
+<div class="container mb-5">
+  <hr />
+
+  <h3>{{ title }}</h3>
+
+  <h4>{{ counter }}</h4>
+
+  <button (click)="increment()" class="btn btn-success me-3 mb-4">
+    Tambah Counter
+  </button>
+  <button (click)="decrement()" class="btn btn-warning me-3 mb-4">
+    Kurang Counter
+  </button>
+
+  <button (click)="reset()" class="btn btn-danger me-3 mb-4">
+    Reset Counter
+  </button>
+
+  <br />
+  <label for="nameInput">Masukan Nama: </label>
+  <input type="text" id="nameInput" [(ngModel)]="desc" />
+  <br />
+  <h2>{{ desc }}</h2>
+</div>

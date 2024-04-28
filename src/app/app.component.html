@@ -4,3 +4,11 @@
 <app-data-binding></app-data-binding>
 <app-property-binding [parentData]="dataPropertyBinding"></app-property-binding>
 <app-event-binding></app-event-binding>
+
+<app-two-way-binding [(counter)]="counter"></app-two-way-binding>
+
+<!-- Ini kalau ngak Two Way Binding -->
+<!-- <app-two-way-binding
+  [counter]="counter"
+  (counterChange)="counter = $event"
+></app-two-way-binding> -->
