@@ -6,6 +6,8 @@ import { PropertyBindingComponent } from './components/property-binding/property
 import { EventBindingComponent } from './components/event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 import { DirectivesComponent } from './components/directives/directives.component';
+import { DirectiveNgclassComponent } from './components/directive-ngclass/directive-ngclass.component';
+import { DirectiveNgstyleComponent } from './components/directive-ngstyle/directive-ngstyle.component';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +20,8 @@ import { DirectivesComponent } from './components/directives/directives.componen
     EventBindingComponent,
     TwoWayBindingComponent,
     DirectivesComponent,
+    DirectiveNgclassComponent,
+    // DirectiveNgstyleComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
