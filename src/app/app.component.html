@@ -17,3 +17,14 @@
 <app-directive-ngclass></app-directive-ngclass>
 <app-directive-ngstyle></app-directive-ngstyle>
 <app-directive-structural></app-directive-structural>
+
+<div class="container mb-5">
+  <hr />
+
+  <p>Silahkan arahkan kursor ke tulisan Dibawah:</p>
+  <input type="radio" name="colors" (click)="color = 'red'" />Red
+  <input type="radio" name="colors" (click)="color = 'lightgreen'" />Green
+  <input type="radio" name="colors" (click)="color = 'yellow'" />Yellow
+
+  <p [appHighlight]="color">Highlight Me!</p>
+</div>

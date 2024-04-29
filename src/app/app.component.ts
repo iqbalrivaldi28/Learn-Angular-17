@@ -9,6 +9,7 @@ import { DirectivesComponent } from './components/directives/directives.componen
 import { DirectiveNgclassComponent } from './components/directive-ngclass/directive-ngclass.component';
 import { DirectiveNgstyleComponent } from './components/directive-ngstyle/directive-ngstyle.component';
 import { DirectiveStructuralComponent } from './components/directive-structural/directive-structural.component';
+import { HighlightDirective } from './components/highlight.directive';
 
 @Component({
   selector: 'app-root',
@@ -25,6 +26,7 @@ import { DirectiveStructuralComponent } from './components/directive-structural/
     DirectiveNgstyleComponent,
     DirectiveStructuralComponent,
     DirectiveStructuralComponent,
+    HighlightDirective,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -34,4 +36,6 @@ export class AppComponent {
     'Ini data dari Parent Component (App Componet) ke Property Binding Component sebagai Child';
 
   counter = 0;
+
+  color = '';
 }
