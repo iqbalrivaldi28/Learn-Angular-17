@@ -11,6 +11,7 @@ import { DirectiveNgstyleComponent } from './components/directive-ngstyle/direct
 import { DirectiveStructuralComponent } from './components/directive-structural/directive-structural.component';
 import { HighlightDirective } from './components/highlight.directive';
 import { ListUserComponent } from './components/depedency-injection/list-user/list-user.component';
+import { UserApiComponent } from './components/http-client/user-api/user-api.component';
 
 @Component({
   selector: 'app-root',
@@ -29,6 +30,7 @@ import { ListUserComponent } from './components/depedency-injection/list-user/li
     DirectiveStructuralComponent,
     HighlightDirective,
     ListUserComponent,
+    UserApiComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

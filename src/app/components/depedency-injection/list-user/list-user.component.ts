@@ -13,6 +13,8 @@ import { CommonModule } from '@angular/common';
 export class ListUserComponent {
   users: User[] = [];
 
+  title = 'Matrei Depedency Injection: ';
+
   constructor(private userService: UserService) {}
 
   ngOnInit(): void {
