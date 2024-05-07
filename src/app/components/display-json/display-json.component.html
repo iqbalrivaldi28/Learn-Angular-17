@@ -1,16 +1,35 @@
-<div class="container">
-    <table class="table table-hover" style="border: 1px">
-      <tr>
-        <td>Name</td>
-        <td>Email</td>
-        <td>Address</td>
-      </tr>
-      @for (item of users; track users) {
-      <tr>
-        <td>{{ item.name }}</td>
-        <td>{{ item.email }}</td>
-        <td>{{ item.address }}</td>
-      </tr>
-      }
-    </table>
+<div class="container mb-5">
+  <h3>{{ title }}</h3>
+  <table class="table table-hover" style="border: 1px">
+    <tr>
+      <td>Name</td>
+      <td>Email</td>
+      <td>Email</td>
+    </tr>
+    @for (item of apiUserData; track apiUserData) {
+    <tr>
+      <td>{{ item.name }}</td>
+      <td>{{ item.email }}</td>
+      <td>{{ item.email }}</td>
+    </tr>
+    }
+  </table>
+
+  <br />
+  <hr />
+  <h4>Data dari Local Json:</h4>
+  <table class="table table-hover" style="border: 1px">
+    <tr>
+      <td>Name</td>
+      <td>Email</td>
+      <td>Address</td>
+    </tr>
+    @for (item of users; track users) {
+    <tr>
+      <td>{{ item.name }}</td>
+      <td>{{ item.email }}</td>
+      <td>{{ item.address }}</td>
+    </tr>
+    }
+  </table>
 </div>
