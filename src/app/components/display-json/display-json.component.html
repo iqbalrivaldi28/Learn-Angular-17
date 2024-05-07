@@ -1,0 +1,16 @@
+<div class="container">
+    <table class="table table-hover" style="border: 1px">
+      <tr>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Address</td>
+      </tr>
+      @for (item of users; track users) {
+      <tr>
+        <td>{{ item.name }}</td>
+        <td>{{ item.email }}</td>
+        <td>{{ item.address }}</td>
+      </tr>
+      }
+    </table>
+</div>

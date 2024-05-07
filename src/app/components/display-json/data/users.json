@@ -1,0 +1,9 @@
+{
+  "users": [
+    { "id": 1, "name": "Alice", "email": "alice@gmail.com", "address": "Jakarta" },
+    { "id": 2, "name": "Bob", "email": "bob@gmail.com","address": "Bandung" },
+    { "id": 3, "name": "Marley", "email": "marley@gmail.com","address": "Bogor" },
+    { "id": 4, "name": "Jobs", "email": "jobs@gmail.com", "address": "Banten" },
+    { "id": 5, "name": "Boy", "email": "boy@gmail.com","address": "Jogja" }
+  ]
+}

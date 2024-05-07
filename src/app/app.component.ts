@@ -12,6 +12,7 @@ import { DirectiveStructuralComponent } from './components/directive-structural/
 import { HighlightDirective } from './components/highlight.directive';
 import { ListUserComponent } from './components/depedency-injection/list-user/list-user.component';
 import { UserApiComponent } from './components/http-client/user-api/user-api.component';
+import { DisplayJsonComponent } from './components/display-json/display-json.component';
 
 @Component({
   selector: 'app-root',
@@ -31,6 +32,7 @@ import { UserApiComponent } from './components/http-client/user-api/user-api.com
     HighlightDirective,
     ListUserComponent,
     UserApiComponent,
+    DisplayJsonComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
