@@ -14,6 +14,8 @@
       "address": "Bogor"
     },
     { "id": 4, "name": "Jobs", "email": "jobs@gmail.com", "address": "Banten" },
-    { "id": 5, "name": "Boy", "email": "boy@gmail.com", "address": "Jogja" }
+    { "id": 5, "name": "Boy", "email": "boy@gmail.com", "address": "Jogja" },
+    { "id": 6, "name": "Jack", "email": "jack@gmail.com", "address": "Jogja" },
+    { "id": 6, "name": "Joy", "email": "joy@gmail.com", "address": "Jogja" }
   ]
 }
