@@ -13,6 +13,7 @@ import { HighlightDirective } from './components/highlight.directive';
 import { ListUserComponent } from './components/depedency-injection/list-user/list-user.component';
 import { UserApiComponent } from './components/http-client/user-api/user-api.component';
 import { DisplayJsonComponent } from './components/display-json/display-json.component';
+import { SwiperJsComponent } from './components/swiper-js/swiper-js.component';
 
 @Component({
   selector: 'app-root',
@@ -33,6 +34,7 @@ import { DisplayJsonComponent } from './components/display-json/display-json.com
     ListUserComponent,
     UserApiComponent,
     DisplayJsonComponent,
+    SwiperJsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
