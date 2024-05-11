@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { Observable, Subscription, map } from 'rxjs';
@@ -5,7 +6,7 @@ import { Observable, Subscription, map } from 'rxjs';
 @Component({
   selector: 'app-observable',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './observable.component.html',
   styleUrl: './observable.component.scss',
 })
@@ -16,7 +17,7 @@ export class ObservableComponent {
   BASE_URL: string = 'https://jsonplaceholder.typicode.com/users';
   data: any;
 
-  httpClient = inject(HttpClient);
+  constructor(private httpClient: HttpClient) {}
 
   ngOnInit(): void {
     console.log('Observable Component');
@@ -27,17 +28,17 @@ export class ObservableComponent {
     });
 
     this.subscription = myObservale.subscribe({
-      next: (data) => {
-        console.log(data);
-        this.data = data;
-      },
+      next: (data) => console.log(data),
       error: (err) => console.log('Something wrong occured: ' + err),
       complete: () => console.log('done'),
     });
 
     //? From API
     this.fetchData().subscribe({
-      next: (data) => console.log('Response:', data),
+      next: (data) => {
+        console.log('Response:', data);
+        this.data = data;
+      },
       error: (err) => console.log('Error: ', err),
       complete: () => console.log('Done'),
     });
@@ -49,8 +50,7 @@ export class ObservableComponent {
 
   //? From API
   fetchData() {
-    return this.httpClient
-      .get(this.BASE_URL)
-      // .pipe(map((response: any) => response.data));
+    return this.httpClient.get(this.BASE_URL)
+    // .pipe(map((response: any) => response.data));
   }
 }

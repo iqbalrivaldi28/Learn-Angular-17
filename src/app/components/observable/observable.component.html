@@ -1,8 +1,8 @@
-<div class="container mb-5">
+<div class="container mb-5" *ngIf="data">
   <hr />
   <h3>{{ title }}</h3>
 
   <br />
 
-  <p>{{ data }}</p>
+  <p>{{ data | json }}</p>
 </div>
