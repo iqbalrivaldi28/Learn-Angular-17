@@ -14,6 +14,7 @@ import { ListUserComponent } from './components/depedency-injection/list-user/li
 import { UserApiComponent } from './components/http-client/user-api/user-api.component';
 import { DisplayJsonComponent } from './components/display-json/display-json.component';
 import { SwiperJsComponent } from './components/swiper-js/swiper-js.component';
+import { ObservableComponent } from './components/observable/observable.component';
 
 @Component({
   selector: 'app-root',
@@ -35,6 +36,7 @@ import { SwiperJsComponent } from './components/swiper-js/swiper-js.component';
     UserApiComponent,
     DisplayJsonComponent,
     SwiperJsComponent,
+    ObservableComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
