@@ -1,0 +1,21 @@
+<div class="container mb-3">
+    <hr>
+    <h3>{{title}}</h3>
+    <br>
+
+    <form  [formGroup]="loginForm" (ngSubmit)="login()">
+        <table class="table">
+            <td [width]="50">
+                <tr>Email: </tr>
+                <br>
+                <tr>Password: </tr>
+            </td>
+            <td>
+                <tr><input class="form-control mb-2" type="email" formControlName="email"></tr>
+                <tr><input  class="form-control" type="password" formControlName="password"></tr>
+            </td>
+        </table>
+        <button class="btn btn-primary" type="submit">Login</button>
+
+    </form>
+</div>

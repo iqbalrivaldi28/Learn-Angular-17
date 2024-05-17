@@ -16,6 +16,7 @@ import { DisplayJsonComponent } from './components/display-json/display-json.com
 import { SwiperJsComponent } from './components/swiper-js/swiper-js.component';
 import { ObservableComponent } from './components/observable/observable.component';
 import { InterceptorComponent } from './components/interceptor/interceptor/interceptor.component';
+import { FormValidatorComponent } from './components/form-validator/form-validator.component';
 
 @Component({
   selector: 'app-root',
@@ -39,6 +40,7 @@ import { InterceptorComponent } from './components/interceptor/interceptor/inter
     SwiperJsComponent,
     ObservableComponent,
     InterceptorComponent,
+    FormValidatorComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
