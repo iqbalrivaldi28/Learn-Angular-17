@@ -1,0 +1,35 @@
+<div class="container mb-5">
+    <hr>
+    <h3>{{title}}</h3>
+
+    <div class="card" style="width: 370px;">
+        <h3 class="text-center py-2 fw-light">Form Login</h3>
+        <div class="card-body" style="width: 350px;">
+
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="d-block p-3">
+                <input class="form-control mb-3" type="text" formControlName="username" placeholder="Masukan username" style="width: 300px;">
+                @if (username?.invalid && (username?.dirty || username?.touched)) {
+                    @if (username?.errors?.['required']) {
+                        <span>Username is Required.</span>
+                    }
+                    @if (username?.errors?.['minlength']){
+                        <span>Usernama must be at least 4 characters</span>
+                    }
+                } 
+
+                <input class="form-control mb-3" type="password" formControlName="password" placeholder="Masukan Password" style="width: 300px;">
+                @if (password?.invalid && (password?.dirty || password?.touched)) {
+                    @if (password?.errors?.['required']) {
+                        <span>Password is Required.</span>
+                    }
+                    @if (password?.errors?.['minlength']){
+                        <span>Password must be at least 8 characters</span>
+                    }
+                }
+                
+                <button type="submit" [disabled]="!loginForm.valid" class="btn btn-primary" style="width: 150px;">Login</button>
+            </form>
+
+        </div>
+    </div>
+</div>
