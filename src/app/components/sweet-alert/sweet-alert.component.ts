@@ -6,12 +6,12 @@ import Swal from 'sweetalert2';
   standalone: true,
   imports: [],
   templateUrl: './sweet-alert.component.html',
-  styleUrl: './sweet-alert.component.scss'
+  styleUrl: './sweet-alert.component.scss',
 })
 export class SweetAlertComponent {
   title: string = 'Materi Sweet ALert: ';
 
-  sweetAlert(){
-    Swal.fire('Berhasil', 'Ini adalah Sweet Alert', 'success')
+  sweetAlert() {
+    Swal.fire('Berhasil', 'Ini adalah Sweet Alert', 'success');
   }
 }

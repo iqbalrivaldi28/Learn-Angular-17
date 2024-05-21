@@ -1,0 +1,21 @@
+<div class="d-flex justify-content-center align-items-center me-auto ms-auto">
+  <div class="container mb-5">
+    <hr />
+    <h3>{{ title }}</h3>
+
+    <br />
+
+    <div class="task-list">
+      @for (item of tasks; track tasks) {
+      <div 
+        [attr.draggable]="true"
+        (dragstart)="onTaskDragStart($event)"
+        (dragover)="onTaskDragOver($event)"
+        (drop)="onTaskDrop($event)"
+      >
+        {{ item.name }}
+      </div>
+      }
+    </div>
+  </div>
+</div>

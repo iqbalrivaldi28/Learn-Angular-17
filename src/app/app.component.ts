@@ -18,6 +18,7 @@ import { ObservableComponent } from './components/observable/observable.componen
 import { InterceptorComponent } from './components/interceptor/interceptor/interceptor.component';
 import { FormValidatorComponent } from './components/form-validator/form-validator.component';
 import { SweetAlertComponent } from './components/sweet-alert/sweet-alert.component';
+import { DragDropComponent } from './components/drag-drop/drag-drop.component';
 
 @Component({
   selector: 'app-root',
@@ -42,7 +43,8 @@ import { SweetAlertComponent } from './components/sweet-alert/sweet-alert.compon
     ObservableComponent,
     InterceptorComponent,
     FormValidatorComponent,
-    SweetAlertComponent
+    SweetAlertComponent,
+    DragDropComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
