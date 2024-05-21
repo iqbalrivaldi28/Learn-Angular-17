@@ -17,6 +17,7 @@ import { SwiperJsComponent } from './components/swiper-js/swiper-js.component';
 import { ObservableComponent } from './components/observable/observable.component';
 import { InterceptorComponent } from './components/interceptor/interceptor/interceptor.component';
 import { FormValidatorComponent } from './components/form-validator/form-validator.component';
+import { SweetAlertComponent } from './components/sweet-alert/sweet-alert.component';
 
 @Component({
   selector: 'app-root',
@@ -40,7 +41,8 @@ import { FormValidatorComponent } from './components/form-validator/form-validat
     SwiperJsComponent,
     ObservableComponent,
     InterceptorComponent,
-    FormValidatorComponent
+    FormValidatorComponent,
+    SweetAlertComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
